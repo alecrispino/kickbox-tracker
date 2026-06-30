@@ -2,7 +2,6 @@ package at.alessandro.kickbox_tracker.controller;
 
 import at.alessandro.kickbox_tracker.model.TrainingSession;
 import at.alessandro.kickbox_tracker.service.TrainingSessionService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -14,7 +13,6 @@ import java.util.List;
 public class TrainingSessionController{
     private final TrainingSessionService service;
 
-    @Autowired
     public TrainingSessionController(TrainingSessionService service){
         this.service = service;
     }    
